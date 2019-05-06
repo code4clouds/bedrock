@@ -34,9 +34,9 @@ variable "subnet_names" {
 }
 
 variable "subnet_service_endpoints" {
-  description = "A list of the service endpoints for the subnet"
+  description = "A list of the service endpoints for the subnet (e.g. Microsoft.Web)"
   type        = "list"
-  default     = ["Microsoft.Web", "Microsoft.Storage"]
+  default     = ["", ""]
 }
 
 variable "tags" {
